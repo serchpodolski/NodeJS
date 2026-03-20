@@ -1,0 +1,17 @@
+# .editorconfig
+
+# This is the top-most EditorConfig file
+root = true
+
+# Standard rules for every file
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = LF
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Specific overrides for Markdown files
+[*.md]
+trim_trailing_whitespace = false

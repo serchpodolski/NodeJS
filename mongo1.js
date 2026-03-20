@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-require("node:dns/promises").setServers(["1.1.1.1", "8.8.8.8"]);
+require('node:dns/promises').setServers(['1.1.1.1', '8.8.8.8'])
 
 
 if (process.argv.length < 3) {
@@ -35,7 +35,7 @@ const Note = mongoose.model('Note', noteSchema)
 //   mongoose.connection.close()
 // })
 
-Note.find({content: /JS/i}).then(result => {
+Note.find({ content: /JS/i }).then(result => {
   result.forEach(note => {
     console.log(note.content)
     console.log(note.important)
